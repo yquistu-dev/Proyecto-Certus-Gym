@@ -1,0 +1,252 @@
+/* FONDO GENERAL */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+
+    background-image: url("https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+    
+}
+
+/* CAPA OSCURA PARA QUE TODO SE LEA BIEN */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: -1;
+}
+
+/* ENCABEZADO */
+header {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    color: #f70808;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    backdrop-filter: blur(3px);
+    
+}
+
+.logo-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+.logo-contenedor img {
+    width: 60px;
+    
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f70808;
+}
+
+/* IMAGEN CENTRAL */
+.imagen-central {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.imagen-central img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(214, 15, 15);
+}
+
+/* TEXTO CENTRAL */
+.texto-gym {
+    text-align: center;
+    padding: 20px 40px;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 25px auto;
+    width: 70%;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+/* SECCIÓN INFERIOR */
+.inferior {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.caja {
+    width: 10%;
+    background: rgb(141, 141, 141);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 20px rgb(255, 254, 254);
+    color: #f70808;
+}
+
+.caja img {
+    width: 70px;
+    border-radius: 20px;
+}
+
+.link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-weight: bold
+}
+
+.link:hover {
+    color: red;
+}
+
+.imagen {
+    width: 80px;
+    height: auto;
+}
+
+/* Sección de Información */
+.banner_informacion {
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 40px;
+    font-size: 35px;
+    background: white;
+    margin: 70px auto;
+    width: 60%;
+    border-radius: 10px;
+    color: #000000;
+
+}
+
+.info-section {
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 12px;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+
+}
+
+.info-title {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 25px;
+    color: #d39e9e;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.info-content p {
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin-bottom: 40px;
+    margin-top: 5px;
+    color: white;
+}
+
+.info-content p strong {
+    color: #9ea0a7;
+}
+
+.imagenes-horizontal {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    clear: both;
+
+}
+
+/* INSCRIPCION */
+.banner-inscripcion {
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 40px;
+    font-size: 35px;
+    background: white;
+    margin: 70px auto;
+    width: 60%;
+    border-radius: 10px;
+    color: #000000;
+}
+
+.contenedor-inscripcion {
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+    color: #ffffff;
+}
+
+form {
+    grid-column: span 2;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+textarea {
+    grid-column: span 2;
+    height: 100px;
+}
+
+.btn-enviar {
+    grid-column: span 2;
+    background-color: #f70808;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.btn-enviar:hover {
+    background-color: #9b0202;
+}
+
+
